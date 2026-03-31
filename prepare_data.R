@@ -4,3 +4,12 @@
 # to store the data.
 
 library(worcs)
+df <- foreign::read.spss("penguins.sav", to.data.frame = TRUE)
+df$species <- as.character(df$species)
+df$species <- factor(df$species)
+
+df[["island"]] <- NULL
+
+descriptives(df)
+
+open_data(df)
