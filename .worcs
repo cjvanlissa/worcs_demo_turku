@@ -14,5 +14,5 @@ data:
 checksums:
   df.csv: c3ba69e41deba28bf0ea977ccb5a0110
   synthetic_df.csv: 14930bf6d1bc642d79347dccad1cd051
-  manuscript/manuscript.md: 36813e261886c0b012d365be1343471f
+  manuscript/manuscript.md: 8246e4dec66b767a97b3ee2a3e5edd51
 endpoints: manuscript/manuscript.md

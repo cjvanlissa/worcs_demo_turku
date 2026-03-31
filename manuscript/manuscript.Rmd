@@ -30,7 +30,7 @@ Type some new text.
 ```{r}
 res_desc <- descriptives(df)
 write.csv(res_desc, "res_desc.csv", row.names = FALSE)
-knitr::kable(res_desc[, c("name", "n", "mean", "sd")])
+knitr::kable(res_desc[, c("name", "n", "mean", "sd")], digits = 2)
 ```
 
 Here are the results of a regression analysis:
@@ -40,6 +40,6 @@ Here are the results of a regression analysis:
 mod <- lm(bill_depth_mm ~ species, data = df)
 res_mod <- summary(mod)
 write.csv(res_mod$coefficients, "res_coef.csv", row.names = FALSE)
-knitr::kable(res_mod$coefficients, caption = "These are the regression coefficients")
+knitr::kable(res_mod$coefficients, caption = "These are the regression coefficients", digits = 2)
 ```
 
